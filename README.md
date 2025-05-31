@@ -4,7 +4,7 @@
 
 ## Швидкий запуск з Docker
 
-1. Клонуйте проєкт: `git clone <your-repo-url>`
+1. Клонуйте проєкт: `git clone https://github.com/kenn2k/apartments-test-task.git`
 2. Перейдіть в папку: `cd <project-name>`
 3. Скопіюйте конфігурацію: `.env`
 4. Запустіть: `docker-compose up --build`
