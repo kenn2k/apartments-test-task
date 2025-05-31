@@ -1,0 +1,18 @@
+FROM node:23-alpine
+
+
+WORKDIR /app
+
+COPY package.json yarn.lock ./
+
+COPY client/package.json ./client/
+
+RUN yarn install --frozen-lockfile
+
+COPY . .
+
+WORKDIR /app/client
+
+EXPOSE 3000
+
+CMD ["yarn", "dev"]
